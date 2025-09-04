@@ -16,7 +16,7 @@ To solve DSA problems + build MERN apps daily for 108 days straight and become a
  
 
 ## 📌 Hashtag
-**Follow on LinkedIn:** [#MERNxDSA108](www.linkedin.com/in/nandkishor-pal)
+**Follow on LinkedIn:** [Nandkishor-pal](www.linkedin.com/in/nandkishor-pal)
 
 ## 💻 Tech Stack
 - **DSA**: C++ (STL, recursion, sorting, trees, graphs)
@@ -27,4 +27,4 @@ Because consistent effort wins. Every. Single. Time.
 
 ---
 
-Made with 💻 by [Your Name](https://github.com/yourusername)
+Made with 💻 by [Nandkishor Pal](https://github.com/Nandkishor786)
