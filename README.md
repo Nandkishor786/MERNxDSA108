@@ -11,7 +11,7 @@ To solve DSA problems + build MERN apps daily for 108 days straight and become a
 
 | Day | DSA (C++)                  | MERN Stack             | Notes         |
 |-----|----------------------------|------------------------|---------------|
-| 1   | ✅ singlyLinkedList (3 problems) | ✅ RestAPI | [Day01](DSA-C++/Day01/singlyLL) |
+| 1   | ✅ singlyLinkedList (3 problems) | ✅ RestAPI | [Day01](DSA_C++/Day01/singlyLL) |
 
  
 
