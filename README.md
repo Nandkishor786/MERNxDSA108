@@ -9,11 +9,11 @@ To solve DSA problems + build MERN apps daily for 108 days straight and become a
 
 ## 📅 Daily Log
 
-| Day | DSA (C++) | MERN Stack | Notes |
-|-----|-----------|------------|-------|
-| 1   | ✅ Arrays (3 problems) | ✅ Express Hello World | [Day 01](DSA-C++/Day01) |
-| 2   | ✅ Binary Search | ✅ Basic Routing | [Day 02](DSA-C++/Day02) |
-| ... | ...       | ...        | ...   |
+| Day | DSA (C++)                  | MERN Stack             | Notes         |
+|-----|----------------------------|------------------------|---------------|
+| 1   | ✅ singlyLinkedList (3 problems) | ✅ RestAPI | [Day01](DSA-C++/Day01/singlyLL) |
+
+ 
 
 ## 📌 Hashtag
 **Follow on LinkedIn:** [#MERNxDSA108](www.linkedin.com/in/nandkishor-pal)
