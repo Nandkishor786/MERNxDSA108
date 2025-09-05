@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "f7426170-59c9-4f30-9e38-b40a7cf5398f",
+		"name": "Secure Awas dummy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44649688"
+	},
+	"item": [
+		{
+			"name": "save visitor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"nandkilshor pal\",\r\n    \"phone\":\"6261775520\",\r\n    \"purpose\":\"Resident\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/visitors"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllVisitors",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add StaffMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"11637\",\r\n  \"name\": \"nandkilshor pal\",\r\n  \"position\": \"watch man\",\r\n  \"salary\": 15000,\r\n  \"phone\": \"6261775520\"\r\n}\r\n"
+				},
+				"url": "http://localhost:5000/staff"
+			},
+			"response": []
+		},
+		{
+			"name": "get one staff member",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get All Staff members",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get visitorbyid",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update visitor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"polic\",\r\n    \"phone\":\"100\",\r\n    \"purpose\":\"manage the society\"  \r\n }  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/visitors/11675"
+			},
+			"response": []
+		},
+		{
+			"name": "delete vsisitor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/visitors/11637"
+			},
+			"response": []
+		}
+	]
+}
