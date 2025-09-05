@@ -1,29 +1,57 @@
-# MERNxDSA: 108 Days to Mastery 🚀
+# 💰 Paytm Clone - Day 02 | #MERNxDSA108
 
-Welcome to my **108-day coding journey** — focused on mastering:
-- 💻 Data Structures & Algorithms in C++
-- 🌐 Full-Stack Web Development using the MERN Stack
+A basic Paytm landing page UI clone built using **HTML**, **Tailwind CSS**, and **Font Awesome**.
 
-## 🔥 Challenge Goal
-To solve DSA problems + build MERN apps daily for 108 days straight and become a confident full-stack developer & problem solver.
+---
 
-## 📅 Daily Log
+## ✅ Features
 
-| Day | DSA (C++)                  | MERN Stack             | Notes         |
-|-----|----------------------------|------------------------|---------------|
-| 1   | ✅ singlyLinkedList (3 problems) | ✅ RestAPI | [Day01](DSA_C++/Day01/singlyLL) |
+- Sticky Navbar with Paytm Logo
+- Hero section with app details
+- Recharge & Pay Bills section
+- Book & Buy section (Tickets, Flights, etc.)
+- Responsive design using Tailwind CSS
+- Font Awesome icons for UI elements
 
- 
+---
 
-## 📌 Hashtag
-**Follow on LinkedIn:**[Nandkishor-Pal](https://www.linkedin.com/in/nandkishor-pal)
+## 🛠 Tech Stack
 
-## 💻 Tech Stack
-- **DSA**: C++ (STL, recursion, sorting, trees, graphs)
-- **MERN**: MongoDB, Express, React, Node.js
+- HTML5
+- Tailwind CSS
+- Font Awesome
 
-## 🧠 Why This Challenge?
-Because consistent effort wins. Every. Single. Time.
+---
 
+---
 
-Made with 💻 by [Nandkishor Pal](https://github.com/Nandkishor786)
+## 📸 Screenshots
+
+![Navbar and Hero Section](./screenshots/st1.png)  
+![Recharge & Pay Bills Section](./screenshots/st2.png)  
+![Book & Buy Section](./screenshots/st3.png)
+
+---
+
+## 📌 Day 02 Progress
+
+- Created Navbar & Hero section
+- Added Recharge & Pay Bills section
+- Added Book & Buy section
+- Applied Tailwind CSS utilities
+- Basic responsiveness done
+
+---
+
+## 🚀 Next Steps (Day 03)
+
+- Add footer section
+- Improve responsiveness for mobile
+- Add animations/transitions
+
+---
+
+## 🧑‍💻 Author
+
+**[Nandkishor Pal]**  
+Part of my [#MERNxDSA108](https://github.com/Nandkishor786)
