@@ -14,7 +14,7 @@ Today, I tackled some foundational **DSA problems** and sharpened my problem-sol
 
 Here’s the screenshot of my program output:
 
-![Problem Output](DSA_C++/screenshots/reverseList.png)
+![Problem Output](../screenshots/reverseList.png)
 
 ---
 
@@ -28,7 +28,7 @@ Here’s the screenshot of my program output:
 
 Here’s the screenshot of my program output:
 
-![Two Sum Problem Output](DSA_C++/screenshots/TwoSum.png)
+![Two Sum Problem Output](../screenshots/TwoSum.png)
 
 ---
 
@@ -42,4 +42,4 @@ Here’s the screenshot of my program output:
 
 Here’s the screenshot of my program output:
 
-![Spiral Matrix Output](DSA_C++/screenshots/spiralOrder.png)
+![Spiral Matrix Output](../screenshots/spiralOreder.png)
