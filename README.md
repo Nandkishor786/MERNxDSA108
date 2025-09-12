@@ -1,5 +1,5 @@
 # MERNxDSA: 108 Days to Mastery 🚀
-[banner](./Post/Day01.png)
+![banner](./Post/Day01.png)
 
 Welcome to my **108-day coding journey** — focused on mastering:
 
@@ -33,7 +33,8 @@ To solve DSA problems + build MERN apps daily for 108 days straight and become a
 
 Explore my DSA solutions and progress:
 
-🔗 https://leetcode.com/u/Nandkishor_pal/
+**LeetCode Profile:** [Nandkishor_pal](https://leetcode.com/u/Nandkishor_pal/)
+
 
 ## 💻 Tech Stack
 
