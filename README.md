@@ -1,7 +1,7 @@
-# MERNxDSA: 108 Days to Mastery 🚀
+# MERNxDSA: Mastery 🚀
 [banner](./Post/Day01.png)
 
-Welcome to my **108-day coding journey** — focused on mastering:
+Welcome to my ** coding journey** — focused on mastering:
 
 - 💻 Data Structures & Algorithms in C++
 - 🌐 Full-Stack Web Development using the MERN Stack
