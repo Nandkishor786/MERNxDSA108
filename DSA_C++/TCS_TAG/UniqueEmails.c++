@@ -3,7 +3,6 @@
 #include<unordered_set>
 using namespace std;
 
-
  int numUniqueEmails(vector<string>& emails) {
         unordered_set<string> st;
 
@@ -36,16 +35,11 @@ using namespace std;
     
 
 int main() {
-     
    vector<string>emails = {
  "a@leetcode.com","b@leetcode.com","c@leetcode.com"
 };
    int num =numUniqueEmails(emails);
-
- 
    cout<<num<<" "<<endl;
-
-
     return 0;
 }
 
