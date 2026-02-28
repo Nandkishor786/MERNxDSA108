@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Sales Intelligence Agent</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: white;
+        width: 400px;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #4f46e5;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #4338ca;
+      }
+
+      .response {
+        margin-top: 15px;
+        background: #f1f5f9;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 13px;
+        white-space: pre-wrap;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+
+      .loading {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>AI Sales Agent</h2>
+      <input type="text" id="query" placeholder="Enter your request..." />
+      <button onclick="sendQuery()">Submit</button>
+      <div class="loading" id="loading"></div>
+      <div class="response" id="response"></div>
+    </div>
+
+    <script>
+      async function sendQuery() {
+        const query = document.getElementById("query").value;
+        const responseBox = document.getElementById("response");
+        const loading = document.getElementById("loading");
+
+        if (!query) {
+          alert("Please enter a query");
+          return;
+        }
+
+        loading.innerText = "Processing...";
+        responseBox.innerText = "";
+
+        try {
+          const res = await fetch(
+            "https://nandkishorpal.app.n8n.cloud/webhook/sales-agent",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ message: query }),
+            },
+          );
+
+          const data = await res.json();
+          responseBox.innerText = JSON.stringify(data, null, 2);
+        } catch (error) {
+          responseBox.innerText = "Error: " + error.message;
+        }
+
+        loading.innerText = "";
+      }
+    </script>
+  </body>
+</html>
