@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Country Info Finder</title>
+</head>
+<body>
+  <div class="container">
+     <h1 id="heading">Country Info Finder</h1>
+      <!-- searchbox -->
+       <div class="searchbox">
+        <input 
+        id="search"
+        type="text"
+        placeholder="Enter country name"
+        >
+        <button  id="btn">Search</button>
+       </div>
+       <!-- result -->
+      <h3 id="heading2">Search Country details </h3>
+        <div class="result">
+         <p id="error"></p> 
+         <p id="loading" class="spinner"></p>
+         <p id="cname"></p>
+         <p id="capital"></p>
+         <p id="population"></p>
+        <img id="flag">
+        </div> 
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

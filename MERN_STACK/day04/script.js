@@ -1,49 +1,48 @@
-const input = document.querySelector("#search");
-const button = document.querySelector(".btn");
-const countryName = document.querySelector("#countryName");
-const capital = document.querySelector("#capital");
-const population = document.querySelector("#population");
-const flag = document.querySelector("#flag");
+const input =document.querySelector('#search');
+const button =document.querySelector('#btn');
 
-const loading = document.querySelector("#loading");
-const error = document.querySelector("#error");
+const cname = document.querySelector('#cname');
+const capital =document.querySelector('#capital');
+const population =document.querySelector('#population');
+const flagimg =document.querySelector('#flag');
 
-button.addEventListener("click", function(){
+const loading =document.querySelector('#loading');
+const error =document.querySelector('#error');
+
+loading.style.display = "none";
+
+button.addEventListener('click', function (){
 
   const country = input.value.trim();
-
-   if(country === ""){
-    alert("Please enter a country name");
+  if(country===""){
+    error.textContent="Please enter the country name ";
     return;
   }
-
-  error.textContent = "";
+  
+  error.textContent=""
   loading.style.display = "block";
+  const startTime = Date.now();
 
   fetch(`https://restcountries.com/v3.1/name/${country}`)
-  .then(response => {
-    if(!response.ok){
-      throw new Error("Country not found");
-    }
-    return response.json();
+  .then(response =>response.json())
+  .then(data =>{
+    console.log(data);
+    loading.style.display ="none";
+    const countryData = data[0];
+    cname.textContent = "Country Name: " + countryData.name.common;
+    capital.textContent = "Capital: "+ countryData.capital[0];
+    population.textContent = "Population: " + countryData.population; 
+    flagimg.src = countryData.flags.png;
+
+    const elapsed = Date.now() - startTime;
+    const remainingTime =1000 - elapsed;
+      setTimeout(() => {
+      loading.style.display = "none";
+    }, remainingTime > 0 ? remainingTime : 0);
   })
-  .then(data => {
-    const dataObj = data[0];
-    countryName.textContent = dataObj.name.common;
-
-     capital.textContent = "Capital: " + 
-      (dataObj.capital ? dataObj.capital[0] : "N/A");
-
-    population.textContent = "Population: " + 
-      dataObj.population.toLocaleString();
-
-    flag.src = dataObj.flags.png;
-
-    loading.style.display = "none";
+  .catch(()=>{
+    loading.style.display="none";
+    error.textContent = "Country Not Found !";
   })
-  .catch(() => {
-    error.textContent = "Country not found";
-    loading.style.display = "none";
-  });
 
-});
+})

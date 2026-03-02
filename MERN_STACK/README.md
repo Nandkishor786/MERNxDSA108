@@ -1,6 +1,6 @@
 # MERNxDSA: Seriess🚀
-[banner](./Post/Day01.png)
 
+ 
 Welcome to my **108-day coding journey** — focused on mastering:
 
 - 💻 Data Structures & Algorithms in C++
