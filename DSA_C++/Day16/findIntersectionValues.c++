@@ -5,7 +5,7 @@ using namespace std;
 //      vector<int> findIntersectionValues(vector<int>& nums1, vector<int>& nums2) {
 //      int ans1 =0,ans2=0;
 //      int n = nums1.size();
-//     int m = nums2.size();
+//     int m = nums2.si ze();
 //      for(int i=0;i<nums1.size();i++){
 //         for(int j=0;j<nums2.size();j++){
 //           if(nums1[i]==nums2[j]){
